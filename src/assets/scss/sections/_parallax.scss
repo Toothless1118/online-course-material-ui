@@ -1,0 +1,47 @@
+.home-parallax {
+    h1 {
+        font-family: 'Roboto Slab';
+        font-weight: bold;
+        font-size: 54px;
+    }
+    h4 {
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    button {
+        width: auto!important;
+        height: auto!important;
+        opacity: 1!important;
+        .custom-trans-btn {
+            font-family: 'Roboto';
+            font-weight: bold;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 15px 40px!important;
+            margin: 0;
+            margin-right: 30px;
+            border-radius: 27px!important;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .home-parallax {
+        h1 {
+            font-size: 40px;
+        }
+        h4 {
+            font-size: 15px;
+        }
+        button {
+            .custom-trans-btn {
+                padding: 15px 34px !important;
+            }
+        }
+    }
+}

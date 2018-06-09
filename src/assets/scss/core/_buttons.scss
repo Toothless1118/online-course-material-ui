@@ -1,0 +1,27 @@
+.custom-trans-btn {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #fff!important;
+    background: transparent!important;
+    padding: 8px 30px !important;
+    border-radius: 20px!important;
+    &.orange {
+        background: #FF7F45!important;
+    }
+}
+.load-more-btn {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    border: 2px solid #979797!important;
+    background: transparent!important;
+    padding: 16px 91px 17px 91px !important;
+    border-radius: 30px!important;
+
+    &.orange {
+        color: #FF7F45;
+    }
+}
