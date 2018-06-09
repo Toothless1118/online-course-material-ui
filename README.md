@@ -1,5 +1,5 @@
 # online-course-frontend
-Online Course Frontend
+Online Course Frontend by Material-UI
 
 
 ## Getting Started
@@ -120,6 +120,6 @@ npm run serve:prod
 
 #### Checking
 
-Project is running at http://localhost:9000/
+Project is running at http://localhost:3000/
 
 ---
