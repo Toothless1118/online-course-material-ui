@@ -21,6 +21,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 // Sections for this page
 import UspsSection from "./Sections/UspsSection.jsx";
 import SectionFiveCarousel from "./Sections/SectionFiveCarousel.jsx";
+import SectionThreeCarousel from "./Sections/SectionThreeCarousel.jsx";
 import CarouselItem from "./Sections/CarouselItem.jsx";
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
@@ -101,9 +102,17 @@ class HomePage extends React.Component {
             </Button>
           </div>
         </div>
-        <div className={classNames(classes.main, classes.SectionThreeCarousel)}>
-          
+        <div className={classNames(classes.main, classes.threeCarouselSection)}>
+          <SectionThreeCarousel title="Discover our popular courses"/>
         </div>
+        <div className={classNames(classes.main)}>
+          <div className={classes.container}>
+            <ProductSection />
+            <TeamSection />
+            <WorkSection />
+          </div>
+        </div>
+        <Footer />
       </div>
     );
   }

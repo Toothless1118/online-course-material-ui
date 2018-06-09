@@ -17,76 +17,27 @@ import CarouselItem from "./CarouselItem";
 
 class SectionThreeCarousel extends React.Component {
   render() {
-    const { classes, category } = this.props;
+    const { classes, title } = this.props;
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: false,
-      responsive: [
-        {
-          breakpoint: 1299,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 790,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 560,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    
     };
     return (
       <div className={classes.section}>
         <div className={classes.container}>
-          <div className="five-carousel-title-wrapper">
+          <div className="three-carousel-title-wrapper">
             <div className="title">
-              Top courses in <span>{category}</span>
-            </div>
-            <div className="all-links">
-              <Button
-                className="featured-category-link-btn blue"
-                color="transparent"
-                size="sm"
-                href="#"
-                rel="noopener noreferrer"
-              >
-                See all<img src={linkIcon} />
-              </Button>
+              {title}
             </div>
           </div>
           <GridContainer className={classes.grid}>
             <GridItem xs={12} sm={12} md={12} className={classes.gritItem}>
               <Card carousel className={classes.card}>
-                <Carousel {...settings} className="five-carousel">
+                <Carousel {...settings} className="three-carousel">
                   <CarouselItem
                     image={image1}
                     username='Albert Einstein'
