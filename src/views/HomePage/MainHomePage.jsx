@@ -104,14 +104,6 @@ class HomePage extends React.Component {
         <div className={classNames(classes.main, classes.SectionThreeCarousel)}>
           
         </div>
-        <div className={classNames(classes.main)}>
-          <div className={classes.container}>
-            <ProductSection />
-            <TeamSection />
-            <WorkSection />
-          </div>
-        </div>
-        <Footer />
       </div>
     );
   }
