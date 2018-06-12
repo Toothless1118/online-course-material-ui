@@ -1,6 +1,6 @@
 import { container } from "assets/jss/material-kit-react.jsx";
 
-const carouselStyle = {
+const carouselFiveStyle = {
   section: {
     padding: "40px 0 0"
   },
@@ -29,4 +29,4 @@ const carouselStyle = {
   }
 };
 
-export default carouselStyle;
+export default carouselFiveStyle;

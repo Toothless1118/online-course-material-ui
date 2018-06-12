@@ -1,0 +1,18 @@
+footer {
+    .footer-link {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F1F9F9;
+        padding: 0.9375rem;
+        display: block;
+        opacity: 0.4;
+        position: relative;
+        border-radius: 3px;
+        text-decoration: none;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

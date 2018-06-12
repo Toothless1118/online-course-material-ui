@@ -10,7 +10,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
-import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselFiveStyle.jsx";
+import carouselFiveStyle from "assets/jss/material-kit-react/views/homepageSections/carouselFiveStyle.jsx";
 import image1 from "assets/img/blink/201_130.png";
 import linkIcon from "assets/img/icons/link-icon.png";
 import CarouselItem from "./CarouselItem";
@@ -32,7 +32,6 @@ class SectionFiveCarousel extends React.Component {
             slidesToShow: 4,
             slidesToScroll: 4,
             infinite: true,
-            dots: true
           }
         },
         {
@@ -41,7 +40,6 @@ class SectionFiveCarousel extends React.Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
           }
         },
         {
@@ -163,4 +161,4 @@ class SectionFiveCarousel extends React.Component {
   }
 }
 
-export default withStyles(carouselStyle)(SectionFiveCarousel);
+export default withStyles(carouselFiveStyle)(SectionFiveCarousel);

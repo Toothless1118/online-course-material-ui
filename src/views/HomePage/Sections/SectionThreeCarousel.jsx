@@ -6,106 +6,118 @@ import withStyles from "material-ui/styles/withStyles";
 // @material-ui/icons
 import LocationOn from "@material-ui/icons/LocationOn";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
-import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselThreeStyle.jsx";
-import image1 from "assets/img/blink/201_130.png";
-import linkIcon from "assets/img/icons/link-icon.png";
-import CarouselItem from "./CarouselItem";
+import carouselThreeStyle from "assets/jss/material-kit-react/views/homepageSections/carouselThreeStyle.jsx";
+import image1 from "assets/img/blink/519_333.png";
 
-class SectionThreeCarousel extends React.Component {
+class SectionCarousel extends React.Component {
   render() {
     const { classes, title } = this.props;
     const settings = {
       dots: true,
+      centerMode: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: false,
+      responsive: [
+        {
+          breakpoint: 560,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     };
     return (
-      <div className={classes.section}>
-        <div className={classes.container}>
-          <div className="three-carousel-title-wrapper">
-            <div className="title">
-              {title}
-            </div>
+      <div className="home-three-carousel-section">
+        <div className={classes.container, classes.homeThreeCarouselContainer}>
+          <div className={classes.titleWrapper}>
+            {title}
           </div>
-          <GridContainer className={classes.grid}>
-            <GridItem xs={12} sm={12} md={12} className={classes.gritItem}>
-              <Card carousel className={classes.card}>
-                <Carousel {...settings} className="three-carousel">
-                  <CarouselItem
-                    image={image1}
-                    username='Albert Einstein'
-                    title='Introduction to theoretical physicist'
-                    review_score={4.5}
-                    review_count={3025}
-                    hours={20}
-                    price={30}
-                    unit='$'
-                    status='Top mentor'
+          <GridContainer spacing={16} className={classes.gridWrapper}>
+            <GridItem xs={12} sm={12} md={8} className={classes.gridItemWrapper}>
+              <Carousel {...settings}>
+                <div className={classes.sliderWrapper}>
+                  <img
+                    src={image1}
+                    alt="First slide"
+                    className="slick-image"
                   />
-                  <CarouselItem
-                    image={image1}
-                    username='Albert Einstein'
-                    title='Introduction to theoretical physicist'
-                    review_score={4.5}
-                    review_count={3025}
-                    hours={20}
-                    price={30}
-                    unit='$'
-                    status='Top mentor'
+                  <div className={classes.slickCaption}>
+                    <h4 className={classes.captionTitle}>
+                      Finance
+                    </h4>
+                  </div>
+                </div>
+                <div className={classes.sliderWrapper}>
+                  <img
+                    src={image1}
+                    alt="Second slide"
+                    className="slick-image"
                   />
-                  <CarouselItem
-                    image={image1}
-                    username='Albert Einstein'
-                    title='Introduction to theoretical physicist'
-                    review_score={4.5}
-                    review_count={3025}
-                    hours={20}
-                    price={30}
-                    unit='$'
-                    status='Top mentor'
+                 <div className={classes.slickCaption}>
+                    <h4 className={classes.captionTitle}>
+                      Business
+                    </h4>
+                  </div>
+                </div>
+                <div className={classes.sliderWrapper}>
+                  <img
+                    src={image1}
+                    alt="Third slide"
+                    className="slick-image"
                   />
-                  <CarouselItem
-                    image={image1}
-                    username='Albert Einstein'
-                    title='Introduction to theoretical physicist'
-                    review_score={4.5}
-                    review_count={3025}
-                    hours={20}
-                    price={30}
-                    unit='$'
-                    status='Top mentor'
+                  <div className={classes.slickCaption}>
+                    <h4 className={classes.captionTitle}>
+                      Entrepreneurship
+                    </h4>
+                  </div>
+                </div>
+                <div className={classes.sliderWrapper}>
+                  <img
+                    src={image1}
+                    alt="Third slide"
+                    className="slick-image"
                   />
-                  <CarouselItem
-                    image={image1}
-                    username='Albert Einstein'
-                    title='Introduction to theoretical physicist'
-                    review_score={4.5}
-                    review_count={3025}
-                    hours={20}
-                    price={30}
-                    unit='$'
-                    status='Top mentor'
+                  <div className={classes.slickCaption}>
+                    <h4 className={classes.captionTitle}>
+                      Finance1
+                    </h4>
+                  </div>
+                </div>
+                <div className={classes.sliderWrapper}>
+                  <img
+                    src={image1}
+                    alt="Third slide"
+                    className="slick-image"
                   />
-                  <CarouselItem
-                    image={image1}
-                    username='Albert Einstein'
-                    title='Introduction to theoretical physicist'
-                    review_score={4.5}
-                    review_count={3025}
-                    hours={20}
-                    price={30}
-                    unit='$'
-                    status='Top mentor'
+                  <div className={classes.slickCaption}>
+                    <h4 className={classes.captionTitle}>
+                      Business1
+                    </h4>
+                  </div>
+                </div>
+                <div className={classes.sliderWrapper}>
+                  <img
+                    src={image1}
+                    alt="Third slide"
+                    className="slick-image"
                   />
-                </Carousel>
-              </Card>
+                  <div className={classes.slickCaption}>
+                    <h4 className={classes.captionTitle}>
+                      Entrepreneurship
+                    </h4>
+                  </div>
+                </div>
+              </Carousel>
             </GridItem>
           </GridContainer>
         </div>
@@ -114,4 +126,4 @@ class SectionThreeCarousel extends React.Component {
   }
 }
 
-export default withStyles(carouselStyle)(SectionThreeCarousel);
+export default withStyles(carouselThreeStyle)(SectionCarousel);

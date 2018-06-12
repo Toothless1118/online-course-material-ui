@@ -16,16 +16,17 @@ import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
+import homePageStyle from "assets/jss/material-kit-react/views/homePage.jsx";
 
 // Sections for this page
 import UspsSection from "./Sections/UspsSection.jsx";
-import SectionFiveCarousel from "./Sections/SectionFiveCarousel.jsx";
 import SectionThreeCarousel from "./Sections/SectionThreeCarousel.jsx";
 import CarouselItem from "./Sections/CarouselItem.jsx";
-import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
-import WorkSection from "./Sections/WorkSection.jsx";
+import SectionFiveCarousel from "./Sections/SectionFiveCarousel.jsx";
+import SkillCategoryGrid from "./Sections/SkillCategoryGrid.jsx";
+import PortfolioCarousel from "./Sections/PortfolioCarousel.jsx";
+import MarketLeader from "./Sections/MarketLeader";
+import BecomeInstructor from "./Sections/BecomeInstructor.jsx";
 
 const dashboardRoutes = [];
 
@@ -42,7 +43,7 @@ class HomePage extends React.Component {
           fixed
           changeColorOnScroll={{
             height: 400,
-            color: "white"
+            color: "green"
           }}
           {...rest}
         />
@@ -105,12 +106,21 @@ class HomePage extends React.Component {
         <div className={classNames(classes.main, classes.threeCarouselSection)}>
           <SectionThreeCarousel title="Discover our popular courses"/>
         </div>
+        <div className={classNames(classes.main, classes.skillCategorySection)}>
+          <SkillCategoryGrid title="Skills by category" />
+        </div>
+        <div className={classNames(classes.main, classes.portfolioSection)}>
+          <PortfolioCarousel />
+        </div>
         <div className={classNames(classes.main)}>
-          <div className={classes.container}>
-            <ProductSection />
-            <TeamSection />
-            <WorkSection />
-          </div>
+          <MarketLeader title="Market leaders are talking about us"/>
+        </div>
+        <div className={classNames(classes.main)}>
+          <BecomeInstructor 
+            title="Become an Instructor"
+            subtxt="Teach what you know. Elemento gives you the tools and the guide to create an online course that will help you monetize you knowledge."
+            link="#"
+          />
         </div>
         <Footer />
       </div>
@@ -118,4 +128,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default withStyles(landingPageStyle)(HomePage);
+export default withStyles(homePageStyle)(HomePage);

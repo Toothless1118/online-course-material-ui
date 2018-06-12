@@ -42,16 +42,50 @@ function HeaderLinks({ ...props }) {
                 buttonIcon={Apps}
                 dropdownList={[
                   <Link to="/" className={classes.dropdownLink}>
-                    All components
+                    Development
                   </Link>,
-                  // eslint-disable-next-line
-                  <a
-                    href="http://creativetimofficial.github.io/material-kit-react/#/documentation"
-                    target="_blank"
-                    className={classes.dropdownLink}
-                  >
-                    Documentation
-                  </a>
+                  <Link to="/" className={classes.dropdownLink}>
+                    Business
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    IT & Software
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Office Productivity
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Personal Development
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Design
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Marketing
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Lifestyle
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Photography
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Health & Fitness
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Teacher Training
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Music
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Academics
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Language
+                  </Link>,
+                  <Link to="/" className={classes.dropdownLink}>
+                    Test Prep
+                  </Link>,
                 ]}
               />
             </Hidden>

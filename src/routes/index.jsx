@@ -1,4 +1,5 @@
 import HomePage from "views/HomePage/MainHomePage.jsx";
+import CoursePage from "views/CoursePage/CoursePage.jsx";
 
 import Components from "views/Components/Components.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
@@ -10,7 +11,8 @@ var indexRoutes = [
   { path: "/profile-page", name: "ProfilePage", component: ProfilePage },
   { path: "/login-page", name: "LoginPage", component: LoginPage },
   { path: "/components", name: "Components", component: Components },
-  { path: "/", name: "HomePage", component: HomePage }
+  { path: "/courses", name: "CoursePage", component: CoursePage },
+  { path: "/", name: "HomePage", component: HomePage },
 ];
 
 export default indexRoutes;

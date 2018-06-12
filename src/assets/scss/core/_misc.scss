@@ -87,9 +87,8 @@ a{
   transition: .5s opacity;
   &:hover,
   &:focus{
-      color: darken($link-color, 5%);
       text-decoration: none;
-      opacity: .8;
+      opacity: .7;
       
   }
 }

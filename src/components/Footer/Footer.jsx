@@ -23,43 +23,58 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
+        <div className={classes.row}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="https://www.creative-tim.com/" className={classes.block}>
-                Creative Tim
+              <a href="#" className="footer-link">
+                About Us
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://presentation.creative-tim.com/"
-                className={classes.block}
-              >
-                About us
+              <a href="#" className="footer-link">
+                Become an Instructor
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="http://blog.creative-tim.com/" className={classes.block}>
+              <a href="#" className="footer-link">
                 Blog
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-              >
-                Licenses
+              <a href="#" className="footer-link">
+                Careers
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a href="#" className="footer-link">
+                Resources
               </a>
             </ListItem>
           </List>
         </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a href="http://www.creative-tim.com" className={aClasses}>
-            Creative Tim
-          </a>{" "}
-          for a better web.
+        <div className={classes.row}>
+          <List className={classes.list}>
+            <ListItem className={classes.inlineBlock}>
+              <a href="#" className={classes.block}>
+                &copy; {1900 + new Date().getYear()} - Elemento. All right reserved
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a href="#" className={classes.block}>
+                Terms
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a href="#" className={classes.block}>
+                Privacy Policy and Cookie Policy
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a href="#" className={classes.block}>
+                Intellectual Property
+              </a>
+            </ListItem>
+          </List>
         </div>
       </div>
     </footer>

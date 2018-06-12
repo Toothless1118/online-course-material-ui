@@ -131,7 +131,7 @@ class Header extends React.Component {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "green"
 };
 
 Header.propTypes = {
@@ -145,7 +145,8 @@ Header.propTypes = {
     "transparent",
     "white",
     "rose",
-    "dark"
+    "dark",
+    "green"
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
@@ -169,7 +170,8 @@ Header.propTypes = {
       "transparent",
       "white",
       "rose",
-      "dark"
+      "dark",
+      "green"
     ]).isRequired
   })
 };

@@ -10,6 +10,7 @@
     &.orange {
         background: #FF7F45!important;
     }
+    
 }
 .load-more-btn {
     font-family: 'Roboto';
@@ -22,6 +23,11 @@
     border-radius: 30px!important;
 
     &.orange {
-        color: #FF7F45;
+        color: #FF7F45!important;
+    }
+    &.orange-bg {
+        color: #FFF!important;
+        background: #FF7F45!important;
+        border: 2px solid #FF7F45!important;
     }
 }
